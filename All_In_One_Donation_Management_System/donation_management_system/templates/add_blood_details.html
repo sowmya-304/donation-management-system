@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Blood Donation Details</h2>
+
+<form method="POST">
+
+<label>Blood Group</label>
+
+<select name="blood_group">
+
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>O+</option>
+<option>O-</option>
+<option>AB+</option>
+<option>AB-</option>
+
+</select>
+
+<br><br>
+
+<label>Last Donation Date</label>
+
+<input type="date" name="last_date">
+
+<br><br>
+
+<button type="submit">Save Details</button>
+
+</form>
+
+{% endblock %}

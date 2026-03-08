@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Donor Profile</h2>
+
+<p><b>Name:</b> {{ donor[0] }}</p>
+<p><b>Email:</b> {{ donor[1] }}</p>
+<p><b>Phone:</b> {{ donor[2] }}</p>
+<p><b>Address:</b> {{ donor[3] }}</p>
+<p><b>City:</b> {{ donor[4] }}</p>
+<p><b>Preferred Donation:</b> {{ donor[5] }}</p>
+
+<a href="/edit_profile">Edit Profile</a>
+
+{% endblock %}

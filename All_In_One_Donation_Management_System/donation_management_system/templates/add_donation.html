@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Add Donation</h2>
+
+<form method="POST">
+
+<label>Donation Type</label>
+
+<select name="type">
+<option value="food">Food</option>
+<option value="clothes">Clothes</option>
+<option value="books">Books</option>
+<option value="blood">Blood</option>
+<option value="money">Money</option>
+</select>
+
+<br><br>
+
+<input type="text" name="title" placeholder="Donation Title" required>
+
+<br><br>
+
+<textarea name="description" placeholder="Donation Description"></textarea>
+
+<br><br>
+
+<input type="number" name="quantity" placeholder="Quantity">
+
+<br><br>
+
+<textarea name="address" placeholder="Pickup Address"></textarea>
+
+<br><br>
+
+<button type="submit">Submit Donation</button>
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Available Blood Donors</h2>
+
+<table border="1">
+
+<tr>
+<th>Name</th>
+<th>Blood Group</th>
+<th>Last Donation</th>
+<th>Eligibility</th>
+</tr>
+
+{% for b in donors %}
+
+<tr>
+
+<td>{{ b[0] }}</td>
+<td>{{ b[1] }}</td>
+<td>{{ b[2] }}</td>
+<td>{{ b[3] }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% endblock %}

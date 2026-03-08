@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Admin Dashboard</h2>
+
+<div class="card-container">
+
+<div class="card">
+<h3>Total Users</h3>
+<p>{{ total_users }}</p>
+</div>
+
+<div class="card">
+<h3>Total Documents</h3>
+<p>{{ total_docs }}</p>
+</div>
+
+<div class="card">
+<h3>Total Corrections</h3>
+<p>{{ total_corrections }}</p>
+</div>
+
+</div>
+
+{% endblock %}

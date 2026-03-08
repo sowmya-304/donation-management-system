@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Edit Profile</h2>
+
+<form method="POST">
+
+<textarea name="address" placeholder="Address"></textarea>
+
+<input type="text" name="city" placeholder="City">
+
+<select name="preferred_donation">
+
+<option value="food">Food</option>
+<option value="clothes">Clothes</option>
+<option value="books">Books</option>
+<option value="blood">Blood</option>
+<option value="money">Money</option>
+
+</select>
+
+<button type="submit">Update</button>
+
+</form>
+
+{% endblock %}

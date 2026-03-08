@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Create Request</h2>
+
+<form method="POST">
+
+<select name="type">
+
+<option value="food">Food</option>
+<option value="clothes">Clothes</option>
+<option value="books">Books</option>
+<option value="blood">Blood</option>
+
+</select>
+
+<br><br>
+
+<textarea name="description" placeholder="Request Description"></textarea>
+
+<br><br>
+
+<input type="number" name="quantity" placeholder="Quantity Needed">
+
+<br><br>
+
+<select name="urgency">
+
+<option value="low">Low</option>
+<option value="medium">Medium</option>
+<option value="high">High</option>
+
+</select>
+
+<br><br>
+
+<button type="submit">Submit Request</button>
+
+</form>
+
+{% endblock %}

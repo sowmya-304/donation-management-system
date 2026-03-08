@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Dashboard</h2>
+
+<div class="card">
+<h3>Add Donation</h3>
+<p>Donate items to people</p>
+<a href="/add_donation">
+<button>Donate</button>
+</a>
+</div>
+
+<div class="card">
+<h3>My Donations</h3>
+<p>View your donations</p>
+<a href="/my_donations">
+<button>View</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Create Request</h3>
+<p>Request donations</p>
+<a href="/add_request">
+<button>Create</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Blood Donors</h3>
+<p>Find blood donors</p>
+<a href="/blood_donors">
+<button>View</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Donate Money</h3>
+<p>Support financially</p>
+<a href="/donate_money">
+<button>Donate</button>
+</a>
+</div>
+
+{% endblock %}

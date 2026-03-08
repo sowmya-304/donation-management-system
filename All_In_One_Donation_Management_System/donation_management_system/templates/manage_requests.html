@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Manage Requests</h2>
+
+<table border="1">
+
+<tr>
+<th>ID</th>
+<th>Type</th>
+<th>Quantity</th>
+<th>Urgency</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+{% for r in requests %}
+
+<tr>
+
+<td>{{ r[0] }}</td>
+<td>{{ r[1] }}</td>
+<td>{{ r[2] }}</td>
+<td>{{ r[3] }}</td>
+<td>{{ r[4] }}</td>
+
+<td>
+
+<a href="/approve_request/{{ r[0] }}">Approve</a>
+
+|
+
+<a href="/reject_request/{{ r[0] }}">Reject</a>
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% endblock %}

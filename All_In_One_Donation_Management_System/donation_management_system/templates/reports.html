@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Reports & Analytics</h2>
+
+<p>Total Users: {{ users }}</p>
+<p>Total Donations: {{ donations }}</p>
+<p>Total Requests: {{ requests }}</p>
+<p>Total Payments: {{ payments }}</p>
+
+<br>
+
+<a href="/download_report">Download CSV Report</a>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Payment History</h2>
+
+<table border="1">
+
+<tr>
+<th>Amount</th>
+<th>Method</th>
+<th>Transaction ID</th>
+<th>Date</th>
+</tr>
+
+{% for p in payments %}
+
+<tr>
+
+<td>{{ p[0] }}</td>
+<td>{{ p[1] }}</td>
+<td>{{ p[2] }}</td>
+<td>{{ p[3] }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% endblock %}
